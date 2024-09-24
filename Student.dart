@@ -1,20 +1,19 @@
 class Student {
-  int _id; // Mã định danh
+  int _id; 
   String _name = '';
-  int _birthYear = 0; // Năm sinh
-  double _ielts = 0.0; // Điểm IELTS
-  String _bloodType = ''; // Nhóm máu
-  bool _gender = true; // Giới tính
-  DateTime? _entryDate; // Ngày vào (tùy chọn)
-
-  // Constructor
+  int _birthYear = 0; 
+  double _ielts = 0.0; 
+  String _bloodType = ''; 
+  bool _gender = true; 
+  DateTime? _entryDate; 
+  
   Student(this._id) {
     this._name = 'Student';
     this._birthYear = 2006;
     this._ielts = 0.0;
     this._bloodType = 'A';
-    this._gender = true; // true: Male, false: Female
-    this._entryDate = null; // Ngày vào mặc định là null
+    this._gender = true; 
+    this._entryDate = null; 
   }
 
   bool khl() {
@@ -43,7 +42,7 @@ class Student {
     return hkl;
   }
 
-  // Getters and Setters
+ 
   int get id {
     return this._id;
   }

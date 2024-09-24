@@ -8,7 +8,7 @@ class StudentService extends StudentRepository{
 
   @override
   void add(Student st) {
-    // Kiểm tra điều kiện hợp lệ trước khi thêm
+    
     if (st.khl()) return;
     list.add(st);
   }
@@ -23,7 +23,7 @@ class StudentService extends StudentRepository{
 
   @override
   void row(int i, Student st) {
-    // Sử dụng sprintf để in ra hàng với các cột tương ứng
+    
     print(sprintf(
         '| %3d | %-15s | %4d | %6.1f | %5s | %-6s | %-10s |',
         [i, st.name, st.birthYear, st.ielts, st.bloodType, st.gender ? "Male" : "Female", st.entryDate?.toIso8601String() ?? "N/A"]));
@@ -68,30 +68,30 @@ class StudentService extends StudentRepository{
 
   @override
   void search() {
-    // Nhập từ khóa tìm kiếm trong tên
+    
     print("Enter keywords to search by name: ");
     String? keyword = stdin.readLineSync()?.toLowerCase();
 
-    // Kiểm tra các phần tử trong danh sách dựa trên từ khóa tìm kiếm
+    
     List<Student> filteredList = list.where((st) {
       return keyword == null || st.name.toLowerCase().contains(keyword);
     }).toList();
 
-    // Hiển thị kết quả
+   
     if (filteredList.isEmpty) {
       print("No student were found matching the entered name keyword.");
     } else {
-      column(); // Hiển thị tiêu đề cột
+      column(); 
       int i = 1;
       filteredList.forEach((st) {
-        row(i, st); // Hiển thị từng hàng
+        row(i, st); 
         i++;
       });
     }
   }
    @override
   List<Student> view() {
-    // Trả về danh sách sinh viên
+    
     return list;
   }
 }
