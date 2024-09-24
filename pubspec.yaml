@@ -1,0 +1,6 @@
+name: 
+  student
+environment:
+  sdk: '^3.5.3'
+dependencies:
+  sprintf: ^7.0.0

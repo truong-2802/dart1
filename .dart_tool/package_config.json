@@ -1,0 +1,21 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "sprintf",
+      "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/hosted/pub.dev/sprintf-7.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "student",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    }
+  ],
+  "generated": "2024-09-24T08:55:30.586955Z",
+  "generator": "pub",
+  "generatorVersion": "3.5.3",
+  "pubCache": "file:///C:/Users/Admin/AppData/Local/Pub/Cache"
+}
